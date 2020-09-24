@@ -2,63 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link href="../navbar.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0dc4026582.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-      .nav {
-        padding: 10px 16px;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background: rgb(254, 172, 94);
-        background: linear-gradient(
-          90deg,
-          rgba(254, 172, 94, 1) 0%,
-          rgba(199, 121, 208, 1) 50%,
-          rgba(75, 192, 200, 1) 100%
-        );
-      }
-
-      .nav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-
-      .nav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-
-      .nav a.active {
-        background-color: rgb(109, 190, 228);
-        color: white;
-      }
-
-      body {
-        padding-top: 65px;
-      }
-
       .parent {
         display: grid;
-        grid-gap: 2px;
+        grid-gap: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
           'project1 project1 project1 projImg1'
           'project2 project2 project2 projImg2'
           'project3 project3 project3 projImg3'
           'project4 project4 project4 projImg4';
-        background-color: #fff;
-        color: #444;
+        background: #fff;
+        padding: 100px;
       }
 
       .project1 {
         grid-area: project1;
-        background-color: #444;
+        background: rgb(119, 201, 212);
+        background: linear-gradient(
+          90deg,
+          rgba(119, 201, 212, 1) 0%,
+          rgba(87, 188, 144, 1) 53%
+        );
         color: #fff;
         border-radius: 5px;
         padding: 20px;
@@ -67,17 +37,18 @@
 
       .projectImg1 {
         grid-area: projImg1;
-        background-color: #444;
         color: #fff;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
       }
 
       .project2 {
         grid-area: project2;
-        background-color: #444;
         color: #fff;
+        background: rgb(119, 201, 212);
+        background: linear-gradient(
+          90deg,
+          rgba(119, 201, 212, 1) 0%,
+          rgba(87, 188, 144, 1) 53%
+        );
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
@@ -85,16 +56,17 @@
 
       .projectImg2 {
         grid-area: projImg2;
-        background-color: #444;
         color: #fff;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
       }
       .project3 {
         grid-area: project3;
-        background-color: #444;
         color: #fff;
+        background: rgb(119, 201, 212);
+        background: linear-gradient(
+          90deg,
+          rgba(119, 201, 212, 1) 0%,
+          rgba(87, 188, 144, 1) 53%
+        );
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
@@ -102,29 +74,41 @@
 
       .projectImg3 {
         grid-area: projImg3;
-        background-color: #444;
         color: #fff;
-        border-radius: 5px;
-        padding: 20px;
         font-size: 150%;
       }
 
-      .project4 {
-        grid-area: project4;
-        background-color: #444;
-        color: #fff;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
+      .project1 a {
+        color: #015249;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
       }
 
-      .projectImg4 {
-        grid-area: projImg4;
-        background-color: #444;
-        color: #fff;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
+      .project1 a:hover {
+        background-color: #a5a5af;
+        color: white;
+      }
+
+      .project2 a {
+        color: #015249;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      }
+
+      .project2 a:hover {
+        background-color: #a5a5af;
+        color: white;
+      }
+
+      .project3 a {
+        color: #015249;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      }
+
+      .project3 a:hover {
+        background-color: #a5a5af;
+        color: white;
       }
     </style>
   </head>
@@ -137,69 +121,46 @@
     </div>
     <div class="parent">
       <div class="project1">
-        1
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          repellat recusandae maiores porro commodi labore! Et neque praesentium
-          suscipit optio architecto laudantium itaque soluta perspiciatis quia
-          ipsam ab, velit molestiae.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero
-          unde officiis fugit quod cum, itaque dignissimos, mollitia corrupti
-          reprehenderit quaerat natus? A, distinctio cupiditate totam asperiores
-          quisquam nihil hic!
-        </p>
+        <a href="https://cryptic-falls-91230.herokuapp.com/">
+          <h3><i class="fas fa-code"></i> DeveloperSpace</h3></a
+        >
+        <p>Online Forum For Developers Using MERN-Stack</p>
+        <a href="https://github.com/haoyuy19/devconnector"
+          >Click for Github Repository</a
+        >
       </div>
-      <div class="projectImg1">1p</div>
+      <div class="projectImg1">
+        <a href="https://cryptic-falls-91230.herokuapp.com/">
+          <img src="../img/devspace.png" width="100%" height="100%"
+        /></a>
+      </div>
       <div class="project2">
-        2
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          repellat recusandae maiores porro commodi labore! Et neque praesentium
-          suscipit optio architecto laudantium itaque soluta perspiciatis quia
-          ipsam ab, velit molestiae.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero
-          unde officiis fugit quod cum, itaque dignissimos, mollitia corrupti
-          reprehenderit quaerat natus? A, distinctio cupiditate totam asperiores
-          quisquam nihil hic!
-        </p>
+        <a href="https://blooming-sands-56296.herokuapp.com/">
+          <h3><i class="fas fa-brain"></i> SmartBrain</h3></a
+        >
+        <p>Face Recognition Application Using Clarifai API</p>
+        <a href="https://github.com/haoyuy19/smart-brain"
+          >Click for Github Repository</a
+        >
       </div>
-      <div class="projectImg2">2p</div>
+      <div class="projectImg2">
+        <a href="https://blooming-sands-56296.herokuapp.com/"
+          ><img src="../img/smartBrain.png" width="100%" height="100%"
+        /></a>
+      </div>
       <div class="project3">
-        3
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          repellat recusandae maiores porro commodi labore! Et neque praesentium
-          suscipit optio architecto laudantium itaque soluta perspiciatis quia
-          ipsam ab, velit molestiae.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero
-          unde officiis fugit quod cum, itaque dignissimos, mollitia corrupti
-          reprehenderit quaerat natus? A, distinctio cupiditate totam asperiores
-          quisquam nihil hic!
-        </p>
+        <h3>
+          <i class="fas fa-subway"></i> Washington Metropolitan Area Metro
+          Helper
+        </h3>
+        <p>Metro Fare Calculator and Status Alert Application Using Django</p>
+        <a href="https://github.com/haoyuy19/dcmetro-project"
+          >Click for Github Repository</a
+        >
       </div>
-      <div class="projectImg3">3p</div>
-      <div class="project4">
-        4
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-          repellat recusandae maiores porro commodi labore! Et neque praesentium
-          suscipit optio architecto laudantium itaque soluta perspiciatis quia
-          ipsam ab, velit molestiae.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero
-          unde officiis fugit quod cum, itaque dignissimos, mollitia corrupti
-          reprehenderit quaerat natus? A, distinctio cupiditate totam asperiores
-          quisquam nihil hic!
-        </p>
+      <div class="projectImg3">
+        <img src="../img/construction.png" width="100%" height="100%" />
       </div>
-      <div class="projectImg4">4p</div>
     </div>
   </body>
 </html>

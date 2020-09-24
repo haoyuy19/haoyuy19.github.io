@@ -13,18 +13,18 @@
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-          'myName myName myName myName'
-          'myPic education education education'
+          'myName education education education'
           'myPic education education education'
           'myPic education education education'
           'myIntro education education education';
         justify-content: center;
         align-content: center;
+        padding: 100px;
       }
       .myName {
         grid-area: myName;
         background-color: #fff;
-        color: #57bc90;
+        color: rgb(119, 201, 212);
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
@@ -40,18 +40,15 @@
 
       .education {
         grid-area: education;
-        background: rgb(119, 201, 212);
-        background: linear-gradient(
-          90deg,
-          rgba(119, 201, 212, 1) 0%,
-          rgba(87, 188, 144, 1) 53%
-        );
-        color: #fff;
+        color: rgb(119, 201, 212);
+        background: #fff;
         padding: 20px;
         font-size: 200%;
         font-family: Verdana, Geneva, sans-serif;
       }
-
+      .education p {
+        font-size: 80%;
+      }
       .myIntro {
         grid-area: myIntro;
         background-color: fff;
@@ -61,11 +58,6 @@
         font-size: 100%;
         font-family: Verdana, Geneva, sans-serif;
       }
-
-      /* img {
-  width: 100%;
-  height: 100%;
-} */
     </style>
   </head>
   <body>
