@@ -2,46 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link href="./navbar.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0dc4026582.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-      .nav {
-        padding: 10px 16px;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        background: rgb(254, 172, 94);
+      .parent {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          'myName myName myName myName'
+          'myPic education education education'
+          'myPic education education education'
+          'myPic education education education'
+          'myIntro education education education';
+        justify-content: center;
+        align-content: center;
+      }
+      .myName {
+        grid-area: myName;
+        background-color: #fff;
+        color: #57bc90;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: bold;
+      }
+
+      .myPic {
+        grid-area: myPic;
+        background-color: #fff;
+        font-size: 150%;
+      }
+
+      .education {
+        grid-area: education;
+        background: rgb(119, 201, 212);
         background: linear-gradient(
           90deg,
-          rgba(254, 172, 94, 1) 0%,
-          rgba(199, 121, 208, 1) 50%,
-          rgba(75, 192, 200, 1) 100%
+          rgba(119, 201, 212, 1) 0%,
+          rgba(87, 188, 144, 1) 53%
         );
+        color: #fff;
+        padding: 20px;
+        font-size: 150%;
+        font-family: Verdana, Geneva, sans-serif;
       }
 
-      .nav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+      .myIntro {
+        grid-area: myIntro;
+        background-color: fff;
+        color: #57bc90;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 100%;
+        font-family: Verdana, Geneva, sans-serif;
       }
 
-      .nav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-
-      .nav a.active {
-        background-color: rgb(109, 190, 228);
-        color: white;
-      }
-
-      body {
-        padding-top: 65px;
-      }
+      /* img {
+  width: 100%;
+  height: 100%;
+} */
     </style>
   </head>
   <body>
@@ -51,9 +75,26 @@
       <a href="./contact/index.html">Contact</a>
       <a href="./about/index.html">About</a>
     </div>
-    <div>
-      <h2>Main page</h2>
-      <p>Some content..</p>
+    <div class="parent">
+      <div class="myName">Haoyu (Alison) Yang</div>
+      <div class="myPic">
+        <img src="./img/headshot.JPG" alt="headshot" width = 100% height = 100%/>
+      </div>
+
+      <div class="myIntro">
+        <p>
+          Hello, I am Haoyu, you can also call me Alison. I am a doing my
+          Master's Degree in Computer Science at Northeastern University.
+        </p>
+      </div>
+      <div class="education">
+        <h3><i class="fas fa-graduation-cap"></i>Education</h3>
+        <p><img src="./img/neu.png" alt="neu" width="90" height="90">July 2020 - <span><i>Dec. 2021</i></span>: Master's of Science in Computer Science at Northeastern University</p>
+        
+        <p><img src="./img/jhu.png" alt="jhu" width="90" height="90">Aug. 2018 - Aug. 2020: Master's of Arts in International Relations at Johns Hopkins University</p>
+        <p><img src="./img/fdu.png" alt="fdu" width="90" height="90">Sep. 2014 - June. 2020: Bachelor's of Arts in International Politics at Fudan University</p>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

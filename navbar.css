@@ -1,0 +1,107 @@
+.nav {
+  padding: 10px 16px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: white;
+}
+
+.nav a {
+  float: left;
+  color: #015249;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.nav a:hover {
+  background-color: #a5a5af;
+  color: white;
+}
+
+.nav a.active {
+  background-color: #77c9d4;
+  color: white;
+}
+
+body {
+  padding-top: 65px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'box1 box1 box1 boxImg1'
+    'box2 box2 box2 boxImg2'
+    'box3 box3 box3 boxImg3'
+    'box4 box4 box4 boxImg4';
+}
+
+.box1 {
+  grid-area: project1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxImg1 {
+  grid-area: projImg1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box2 {
+  grid-area: project1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxImg2 {
+  grid-area: projImg1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.box3 {
+  grid-area: project1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxImg3 {
+  grid-area: projImg1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.box4 {
+  grid-area: project1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxImg4 {
+  grid-area: projImg1;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
