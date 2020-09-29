@@ -3,62 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link href="./navbar.css" rel="stylesheet" />
+    <link href="./home.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/0dc4026582.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      .parent {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-          'myName education education education'
-          'myPic education education education'
-          'myPic education education education'
-          'myIntro education education education';
-        justify-content: center;
-        align-content: center;
-        padding: 100px;
-      }
-      .myName {
-        grid-area: myName;
-        background-color: #fff;
-        color: rgb(119, 201, 212);
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 150%;
-        font-family: Verdana, Geneva, sans-serif;
-        font-weight: bold;
-      }
-
-      .myPic {
-        grid-area: myPic;
-        background-color: #fff;
-        font-size: 150%;
-      }
-
-      .education {
-        grid-area: education;
-        color: rgb(119, 201, 212);
-        background: #fff;
-        padding: 20px;
-        font-size: 200%;
-        font-family: Verdana, Geneva, sans-serif;
-      }
-      .education p {
-        font-size: 80%;
-      }
-      .myIntro {
-        grid-area: myIntro;
-        background-color: fff;
-        color: #57bc90;
-        border-radius: 5px;
-        padding: 20px;
-        font-size: 100%;
-        font-family: Verdana, Geneva, sans-serif;
-      }
-    </style>
   </head>
   <body>
     <div class="nav">
@@ -70,12 +19,7 @@
     <div class="parent">
       <div class="myName">Haoyu (Alison) Yang</div>
       <div class="myPic">
-        <img
-          src="./img/headshot.JPG"
-          alt="headshot"
-          width="100%"
-          height="100%"
-        />
+        <img src="./img/headshot.JPG" />
       </div>
 
       <div class="myIntro">
@@ -87,7 +31,7 @@
       <div class="education">
         <h3><i class="fas fa-graduation-cap"></i>Education</h3>
         <h5>
-          <img src="./img/neu.png" alt="neu" width="90" height="90" />
+          <img src="./img/neu.png" alt="neu" width="30" height="30" />
           Northeastern University
         </h5>
         <p>
@@ -96,14 +40,14 @@
         </p>
 
         <h5>
-          <img src="./img/jhu.png" alt="jhu" width="90" height="90" /> Johns
+          <img src="./img/jhu.png" alt="jhu" width="30" height="30" /> Johns
           Hopkins University
         </h5>
         <p>
           Aug. 2018 - Aug. 2020: Master's of Arts in International Relations
         </p>
         <h5>
-          <img src="./img/fdu.png" alt="fdu" width="90" height="90" /> Fudan
+          <img src="./img/fdu.png" alt="fdu" width="30" height="30" /> Fudan
           University
         </h5>
         <p>

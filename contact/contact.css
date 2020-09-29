@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  justify-items: center;
+}
+
+.box {
+  background: white;
+  color: #015249;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.box a {
+  font-size: 30px;
+  color: #015249;
+  text-decoration: none;
+}
+
+.box p:hover {
+  color: #a5a5af;
+}
+
+.box p {
+  font-size: 30px;
+  color: #015249;
+}
+
+h2 {
+  color: #015249;
+}
+
+@media screen and (max-width: 600px) {
+  .box p {
+    font-size: 15px;
+  }
+}

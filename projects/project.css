@@ -1,0 +1,102 @@
+.parent {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'project1 project1 project1 projImg1'
+    'project2 project2 project2 projImg2'
+    'project3 project3 project3 projImg3'
+    'project4 project4 project4 projImg4';
+  background: #fff;
+  padding: 20px;
+}
+
+.project1 {
+  grid-area: project1;
+  background: rgb(119, 201, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 201, 212, 1) 0%,
+    rgba(87, 188, 144, 1) 53%
+  );
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.projectImg1 {
+  grid-area: projImg1;
+  color: #fff;
+}
+
+.project2 {
+  grid-area: project2;
+  color: #fff;
+  background: rgb(119, 201, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 201, 212, 1) 0%,
+    rgba(87, 188, 144, 1) 53%
+  );
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.projectImg2 {
+  grid-area: projImg2;
+  color: #fff;
+}
+.project3 {
+  grid-area: project3;
+  color: #fff;
+  background: rgb(119, 201, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 201, 212, 1) 0%,
+    rgba(87, 188, 144, 1) 53%
+  );
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.projectImg3 {
+  grid-area: projImg3;
+  color: #fff;
+  font-size: 150%;
+}
+
+.project1 a {
+  color: #015249;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.project1 a:hover {
+  background-color: #a5a5af;
+  color: white;
+}
+
+.project2 a {
+  color: #015249;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.project2 a:hover {
+  background-color: #a5a5af;
+  color: white;
+}
+
+.project3 a {
+  color: #015249;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.project3 a:hover {
+  background-color: #a5a5af;
+  color: white;
+}

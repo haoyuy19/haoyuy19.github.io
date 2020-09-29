@@ -1,0 +1,96 @@
+.parent {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'myName education education education'
+    'myPic education education education'
+    'myPic education education education'
+    'myIntro education education education';
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+.myName {
+  grid-area: myName;
+  background-color: #fff;
+  color: #015249;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+.myPic {
+  grid-area: myPic;
+  background-color: #fff;
+}
+.myPic img {
+  width: 300px;
+  height: 400px;
+}
+
+.education {
+  grid-area: education;
+  color: rgb(119, 201, 212);
+  background: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.education h5 {
+  font-size: 26px;
+  color: teal;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.education h3 {
+  font-size: 30px;
+  color: teal;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.myIntro {
+  grid-area: myIntro;
+  background-color: fff;
+  color: #015249;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .myName {
+    font-size: 15px;
+  }
+  .myPic img {
+    width: 120px;
+    height: 150px;
+  }
+
+  .myIntro {
+    font-size: 10px;
+  }
+
+  .education {
+    padding: 2px;
+    font-size: 15px;
+  }
+
+  .education h5 {
+    font-size: 18px;
+  }
+
+  .education h3 {
+    font-size: 20px;
+  }
+
+  .parent {
+    display: grid;
+    grid-gap: 1px;
+    padding: 2px;
+  }
+}
